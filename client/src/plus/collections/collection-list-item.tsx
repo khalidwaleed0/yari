@@ -4,7 +4,7 @@ import { Button } from "../../ui/atoms/button";
 import { EditCollection } from "./edit-collection";
 import { Breadcrumbs } from "../../ui/molecules/breadcrumbs";
 import { DropdownMenu, DropdownMenuWrapper } from "../../ui/molecules/dropdown";
-import { docCategory } from "../../utils";
+import { getCategoryByPathname } from "../../utils";
 import { _getIconLabel } from "../common";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
@@ -25,7 +25,7 @@ export function CollectionListItem({
   const [show, setShow] = React.useState(false);
   const { isOnline } = useOnlineStatus();
 
-  const iconClass = docCategory(item.url);
+  const iconClass = getCategoryByPathname(item.url);
   const iconLabel = _getIconLabel(item.url);
 
   return (
