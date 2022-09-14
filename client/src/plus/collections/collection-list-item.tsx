@@ -25,7 +25,7 @@ export function CollectionListItem({
   const [show, setShow] = React.useState(false);
   const { isOnline } = useOnlineStatus();
 
-  const iconClass = docCategory({ pathname: item.url })?.split("-")[1];
+  const iconClass = docCategory({ pathname: item.url });
   const iconLabel = _getIconLabel(item.url);
 
   return (
