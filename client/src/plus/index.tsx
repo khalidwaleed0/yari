@@ -20,8 +20,6 @@ export function Plus({ pageTitle, ...props }: { pageTitle?: string }) {
     document.title = pageTitle || MDN_PLUS_TITLE;
   }, [pageTitle]);
 
-  const userData = useUserData();
-
   const isServer = useIsServer();
   const loading = (
     <Loading

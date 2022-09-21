@@ -15,8 +15,6 @@ export function BookmarkContainer({ doc }: { doc: Doc }) {
     url: doc.mdn_url,
   }).toString()}`;
 
-  const userData = useUserData();
-
   const { data, isValidating, mutate } = useSWR<BookmarkedData>(
     apiURL,
     async (url) => {
