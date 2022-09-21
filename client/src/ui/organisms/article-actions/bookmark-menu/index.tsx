@@ -32,7 +32,7 @@ export function BookmarkContainer({ doc }: { doc: Doc }) {
 
   return (
     <>
-      {userData?.settings?.multipleCollections ? (
+      {true ? (
         <BookmarkV2Menu doc={doc} />
       ) : (
         <BookmarkMenu

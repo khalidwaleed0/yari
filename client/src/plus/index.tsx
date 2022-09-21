@@ -66,7 +66,7 @@ export function Plus({ pageTitle, ...props }: { pageTitle?: string }) {
         path="collections/*"
         element={
           <Layout>
-            {userData?.settings?.multipleCollections ? (
+            {true ? (
               <CollectionsV2 />
             ) : (
               <div className="bookmarks girdle">
