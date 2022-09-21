@@ -1,7 +1,6 @@
 import useSWR from "swr";
 import { Doc } from "../../../../../../libs/types/document";
 import { BookmarkData } from "../../../../plus/collections";
-import { useUserData } from "../../../../user-context";
 import { BookmarkMenu } from "./menu";
 import BookmarkV2Menu from "./menu-v2";
 
